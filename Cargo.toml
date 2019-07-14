@@ -1,0 +1,16 @@
+[package]
+name = "attendmqtt"
+version = "0.1.0"
+authors = ["Mike Tang <daogangtang@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+clap = "2"
+log = "0.4"
+env_logger = "0.5"
+uuid = { version = "0.7", features = ["v4"] }
+time = "0.1"
+mqtt-protocol = { git = "https://github.com/zonyitoo/mqtt-rs" }
+serde = { version = "*", features = ["derive"] }
+serde_json = "*"
+reqwest = "0.9"
